@@ -1,0 +1,59 @@
+node-mute-stream (0.0.8-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use pkg-js-tools auto test & install
+  * Fix copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 08 Mar 2020 14:07:04 +0100
+
+node-mute-stream (0.0.8-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 0.0.8
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Bump debhelper compatibility level to 11
+  * Update URL in Vcs-* field
+  * Fix URL in d/copyright
+  * Add minimal test
+  * Add upstream test in autopkgtest
+  * Add d/upstream/metadata
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Tue, 22 Jan 2019 04:59:49 +0530
+
+node-mute-stream (0.0.7-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported Upstream version 0.0.7
+  * Update Vcs-* fields.
+  * Refresh copyright and update license.
+  * Standards-Version: 3.9.8
+  * Debhelper compat: 9
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Fri, 23 Dec 2016 13:17:54 +0100
+
+node-mute-stream (0.0.4-1) unstable; urgency=medium
+
+  * Standards-Version: 3.9.5
+  * Move to pkg-javascript
+  * Imported Upstream version 0.0.4
+
+ -- Jérémy Lal <kapouer@melix.org>  Tue, 29 Jul 2014 02:30:12 +0200
+
+node-mute-stream (0.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #704104)
+
+ -- Jérémy Lal <kapouer@melix.org>  Wed, 27 Mar 2013 23:43:56 +0100
