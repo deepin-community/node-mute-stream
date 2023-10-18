@@ -1,4 +1,9 @@
-version=3
-opts=filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-mute-stream-$1.tar.gz/ \
-https://github.com/isaacs/mute-stream/tags .*/archive/v?([\d\.]+).tar.gz	
+version=4
+opts=filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-mute-stream-$1/ \
+https://github.com/isaacs/mute-stream/tags .*/archive/.*/v?([\d\.]+).tar.gz group
 
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-mute-stream,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-mute-stream-$1/" \
+ https://registry.npmjs.org/@types/mute-stream https://registry.npmjs.org/@types/mute-stream/-/mute-stream-([\d\.]+)@ARCHIVE_EXT@ group
